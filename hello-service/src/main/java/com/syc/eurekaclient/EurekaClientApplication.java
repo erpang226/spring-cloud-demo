@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Random;
 
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -20,9 +21,14 @@ public class EurekaClientApplication {
     private DiscoveryClient discoveryClient;
 
     @RequestMapping("/")
-    public String home(){
+    public String home() throws InterruptedException {
         List<String> services = discoveryClient.getServices();
         services.forEach(System.out::println);
+        int time = new Random().nextInt(3000);
+
+        System.out.println("sleep: " + time + "ms");
+        Thread.sleep(time);
+
 
         return "hello world";
     }
