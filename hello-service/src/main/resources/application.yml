@@ -1,9 +1,12 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+      defaultZone: http://syc:123456@localhost:8761/eureka/,http://syc:123456@localhost:8762/eureka/
+    healthcheck:
+      enabled: true
 server:
   port: 8082
 spring:
   application:
     name: hello-service-1
+
