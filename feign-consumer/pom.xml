@@ -14,7 +14,7 @@
         <groupId>com.syc</groupId>
         <artifactId>spring-cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>..</relativePath>
     </parent>
 
     <properties>
