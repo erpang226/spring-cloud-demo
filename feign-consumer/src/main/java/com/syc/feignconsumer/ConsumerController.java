@@ -15,5 +15,14 @@ public class ConsumerController {
 
         return helloService.hello();
     }
+
+    @RequestMapping("/feign-consumer2")
+    public String helloConsumer2() {
+        System.out.println(helloService.hello1("tom"));
+        System.out.println(helloService.hello2("tom", 24));
+        System.out.println(helloService.hello3(new User("tom", 24)));
+
+        return helloService.hello();
+    }
 }
 
