@@ -1,4 +1,4 @@
-package com.syc.eurekaclient;
+package com.syc;
 
 
 import org.springframework.boot.SpringApplication;

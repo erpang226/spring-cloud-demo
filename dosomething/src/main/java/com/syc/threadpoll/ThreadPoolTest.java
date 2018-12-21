@@ -1,4 +1,4 @@
-package com.syc.eurekaclient.hystrix;
+package com.syc.threadpoll;
 
 import java.util.concurrent.*;
 
