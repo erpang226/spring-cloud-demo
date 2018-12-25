@@ -10,6 +10,9 @@ public class ConsumerController {
     @Autowired
     private HelloService helloService;
 
+    @Autowired
+    private RefactorHelloService refactorHelloService;
+
     @RequestMapping("/feign-consumer")
     public String helloConsumer() {
 
@@ -21,6 +24,15 @@ public class ConsumerController {
         System.out.println(helloService.hello1("tom"));
         System.out.println(helloService.hello2("tom", 24));
         System.out.println(helloService.hello3(new User("tom", 24)));
+
+        return helloService.hello();
+    }
+
+    @RequestMapping("/feign-consumer3")
+    public String helloConsumer3() {
+        System.out.println(refactorHelloService.hello4("tom"));
+        System.out.println(refactorHelloService.hello5("tom", 24));
+        System.out.println(refactorHelloService.hello6(new dto.User("tom", 24)));
 
         return helloService.hello();
     }
