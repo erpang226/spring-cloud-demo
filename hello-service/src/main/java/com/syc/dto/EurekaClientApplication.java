@@ -1,4 +1,4 @@
-package com.syc.eurekaclient;
+package com.syc.dto;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

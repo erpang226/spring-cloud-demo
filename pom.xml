@@ -30,6 +30,7 @@
         <module>ribbon-consumer</module>
         <module>feign-consumer</module>
         <module>dosomething</module>
+        <module>api</module>
     </modules>
     <dependencyManagement>
         <dependencies>
