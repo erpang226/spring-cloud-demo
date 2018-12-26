@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient("hello-service-1")
+@FeignClient(value = "hello-service-1")
 public interface HelloService {
 
     @RequestMapping("/")
@@ -20,7 +20,7 @@ public interface HelloService {
      * @return
      */
     @RequestMapping("/hello1")
-    String hello1(@RequestParam String name);
+    String hello1(@RequestParam("name") String name);
 
     /**
      * header 数据绑定测试
@@ -29,7 +29,7 @@ public interface HelloService {
      * @return
      */
     @RequestMapping("/hello2")
-    User hello2(@RequestHeader String name, @RequestHeader Integer age);
+    User hello2(@RequestHeader("name") String name, @RequestHeader("age") Integer age);
 
     /**
      * body 数据绑定测试

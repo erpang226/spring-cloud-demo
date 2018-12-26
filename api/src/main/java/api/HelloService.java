@@ -20,7 +20,7 @@ public interface HelloService {
      * @return
      */
     @RequestMapping("/hello4")
-    String hello4(@RequestParam String name);
+    String hello4(@RequestParam("name") String name);
 
     /**
      * header 数据绑定测试
@@ -30,7 +30,7 @@ public interface HelloService {
      * @return
      */
     @RequestMapping("/hello5")
-    User hello5(@RequestHeader String name, @RequestHeader Integer age);
+    User hello5(@RequestHeader("name") String name, @RequestHeader("age") Integer age);
 
     /**
      * body 数据绑定测试
