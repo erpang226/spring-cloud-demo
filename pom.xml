@@ -29,7 +29,7 @@
         <module>eureka-server</module>
         <module>ribbon-consumer</module>
         <module>feign-consumer</module>
-        <module>dosomething</module>
+        <module>do-something</module>
         <module>api</module>
     </modules>
     <dependencyManagement>
