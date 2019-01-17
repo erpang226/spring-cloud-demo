@@ -17,3 +17,11 @@ server:
   port: 9091
 
 # 超时重试？？
+
+HELLO-SERVICE-1:
+  ribbon:
+    ConnectTimeout: 500
+    ReadTimeout: 1000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetriesNextServer: 2
+    MaxAutoRetries: 3

@@ -20,5 +20,13 @@ public class ConsumerController {
 
         return refactorHelloService.hello();
     }
+
+    @RequestMapping("/feign-consumer4")
+    public String helloConsumer4() {
+
+        return refactorHelloService.hello();
+    }
+
+
 }
 

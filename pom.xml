@@ -31,6 +31,7 @@
         <module>feign-consumer</module>
         <module>do-something</module>
         <module>api</module>
+        <module>api-gateway</module>
     </modules>
     <dependencyManagement>
         <dependencies>
