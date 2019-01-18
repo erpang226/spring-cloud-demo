@@ -7,8 +7,8 @@ spring:
         git:
           uri: https://github.com/erpang226/spring-config
           search-paths: spring-cloud-learning
-          username: erpang226
-          password: syc398399363
+          username: {username}
+          password: {password}
 
 
 server:
